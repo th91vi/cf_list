@@ -1,5 +1,8 @@
 export const data = {
   product: {
+    medicineName: "Viagra",
+    dosage: "100mg",
+    medicineModifier: "Comprimidos",
     activePrinciple: "Citrato de sildenafila",
     category: "Medicamentos",
     manufacturer: "Pfizer",
@@ -24,6 +27,7 @@ export const data = {
       callToAction:
         "Medicamentos Genéricos com Até 95% de Desconto. Aproveite!",
       logo: "droga-raia.jpg",
+      active: true,
     },
     {
       medicineName: "Viagra",
@@ -35,6 +39,7 @@ export const data = {
       price: 138.5,
       callToAction: "Ofertas Imperdíveis. Compre e Retire na Loja.",
       logo: "drogasil.jpg",
+      active: true,
     },
     {
       medicineName: "Viagra",
@@ -47,6 +52,7 @@ export const data = {
       callToAction:
         "FRETE REDUZIDO: para a cidade de São Paulo e Grande São Paulo - Loja Ebit Diamante",
       logo: "drogarianovaesperanca_menor.png",
+      active: true,
     },
     {
       medicineName: "Viagra",
@@ -58,6 +64,7 @@ export const data = {
       price: 151.67,
       callToAction: "FRETE REDUZIDO: para todo o Brasil.",
       logo: "farma22.png",
+      active: false,
     },
     {
       medicineName: "Viagra",
@@ -70,6 +77,7 @@ export const data = {
       callToAction:
         "Entrega em todo Brasil. Frete grátis Goiânia e região, consulte condições.",
       logo: "orama_logo.png",
+      active: false,
     },
   ],
 };
