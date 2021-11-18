@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Container, Row, Col } from "react-bootstrap";
 import { HeaderBreadcrumb } from "../components/Breadcrumb/Breadcrumb";
+import { Filter } from "../components/Filter";
 import { HeaderNavbar } from "../components/Navbar";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <Row>
           <Col>
             <HeaderBreadcrumb />
+            <Filter />
           </Col>
         </Row>
       </Container>
