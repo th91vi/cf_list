@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { Container, Row, Col } from "react-bootstrap";
+import { HeaderBreadcrumb } from "../components/Breadcrumb/Breadcrumb";
 import { HeaderNavbar } from "../components/Navbar";
 
 export default function Home() {
@@ -10,6 +12,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeaderNavbar />
+      <Container>
+        <Row>
+          <Col>
+            <HeaderBreadcrumb />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }
