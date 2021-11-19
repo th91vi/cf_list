@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Row, Col, Stack } from "react-bootstrap";
-import { FaQuestionCircle } from "react-icons/fa";
+import { Row, Col, Button } from "react-bootstrap";
+import { FaBell, FaQuestionCircle, FaShoppingBasket } from "react-icons/fa";
 import { data } from "../../../data/data";
 
 export function ProductHighlight() {
@@ -62,6 +62,34 @@ export function ProductHighlight() {
             <strong>{minPrice}</strong> até <strong>{maxPrice}</strong>
           </li>
         </ul>
+      </Col>
+      <Col>
+        <div className="d-grid gap-2">
+          <Button size="lg" variant="success">
+            Melhor preço: R${minPrice}
+          </Button>
+          <Row>
+            <Col>
+              <Button size="lg" variant="primary">
+                <span>
+                  <FaShoppingBasket
+                    style={{ marginRight: "8px" }}
+                    className="mb-1"
+                  />
+                  <small>INCLUIR NA LISTA</small>
+                </span>
+              </Button>
+            </Col>
+            <Col>
+              <Button size="lg" variant="primary">
+                <span>
+                  <FaBell style={{ marginRight: "8px" }} className="mb-1" />
+                  <small>LEMBRETE</small>
+                </span>
+              </Button>
+            </Col>
+          </Row>
+        </div>
       </Col>
     </Row>
   );
