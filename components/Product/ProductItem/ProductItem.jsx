@@ -47,7 +47,12 @@ export function ProductItem({
                   <span>
                     <FaShoppingBasket style={{ marginRight: "8px" }} />{" "}
                     <small>
-                      <a href="#" title="IR PARA LOJA" rel="noopener">
+                      <a
+                        href="#"
+                        title="IR PARA LOJA"
+                        target="_blank"
+                        rel="noopener"
+                      >
                         IR PARA LOJA
                       </a>
                     </small>

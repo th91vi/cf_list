@@ -3,6 +3,7 @@ import { FaArrowUp, FaDollarSign, FaFile, FaSearch } from "react-icons/fa";
 import { ProductHighlight } from "../ProductHighlight";
 import { data } from "../../../data/data";
 import { ProductItem } from "../ProductItem";
+import { ProductPackageInsert } from "../ProductPackageInsert";
 
 export function Listing() {
   const {
@@ -38,13 +39,23 @@ export function Listing() {
           <Row>
             <Col>
               <Stack direction="vertical">
-                <a href="#" title="IR PARA LOJA" target="_blank" rel="noopener">
+                <a
+                  href="#"
+                  title={`Bula ${medicineName} ${dosage} ${quantity}`}
+                  target="_blank"
+                  rel="noopener"
+                >
                   <span>
                     <FaFile /> Bula {medicineName} {dosage} {quantity}
                     {medicineModifier}
                   </span>
                 </a>
-                <a href="#" title="IR PARA LOJA" target="_blank" rel="noopener">
+                <a
+                  href="#"
+                  title={`Menor preço ${medicineName} ${dosage} ${quantity} ${medicineModifier}`}
+                  target="_blank"
+                  rel="noopener"
+                >
                   <span>
                     <FaDollarSign /> Menor preço {medicineName} {dosage}
                     {quantity}
@@ -61,6 +72,7 @@ export function Listing() {
           Ver preços <FaArrowUp className="mb-1" />
         </h6>
       </div>
+      <ProductPackageInsert product={data.product} />
     </>
   );
 }
