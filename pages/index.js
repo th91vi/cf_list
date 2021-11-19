@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Container, Row, Col } from "react-bootstrap";
 import { HeaderBreadcrumb } from "../components/Breadcrumb/Breadcrumb";
-import { Filter } from "../components/Filter";
+import { Filter } from "../components/Product/Filter";
 import { Listing } from "../components/Product/ProductListing";
 import { HeaderNavbar } from "../components/Navbar";
 
