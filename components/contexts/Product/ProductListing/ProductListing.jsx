@@ -1,7 +1,7 @@
 import { Accordion, Stack, Card, Row, Col } from "react-bootstrap";
 import { FaArrowUp, FaDollarSign, FaFile, FaSearch } from "react-icons/fa";
 import { ProductHighlight } from "../ProductHighlight";
-import { data } from "../../../data/data";
+import { data } from "../../../../data/data";
 import { ProductItem } from "../ProductItem";
 import { ProductPackageInsert } from "../ProductPackageInsert";
 

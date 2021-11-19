@@ -1,6 +1,6 @@
 import { Accordion } from "react-bootstrap";
 import { FaFile } from "react-icons/fa";
-import { viagraPackageInsertData } from "../../../data/viagraPackageInsert";
+import { viagraPackageInsertData } from "../../../../data/viagraPackageInsert";
 
 export function ProductPackageInsert({
   product: { medicineName, medicineModifier, manufacturer },

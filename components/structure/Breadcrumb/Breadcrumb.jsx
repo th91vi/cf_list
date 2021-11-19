@@ -9,7 +9,7 @@ import {
   Card,
 } from "react-bootstrap";
 import { FaHome } from "react-icons/fa";
-import { data } from "../../data/data";
+import { data } from "../../../data/data";
 
 export function HeaderBreadcrumb() {
   const {

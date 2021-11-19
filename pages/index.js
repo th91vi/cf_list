@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Container, Row, Col } from "react-bootstrap";
-import { HeaderBreadcrumb } from "../components/Breadcrumb/Breadcrumb";
-import { Filter } from "../components/Product/Filter";
-import { Listing } from "../components/Product/ProductListing";
-import { HeaderNavbar } from "../components/Navbar";
+import { HeaderBreadcrumb } from "../components/structure/Breadcrumb/Breadcrumb";
+import { Filter } from "../components/contexts/Product/Filter";
+import { Listing } from "../components/contexts/Product/ProductListing";
+import { HeaderNavbar } from "../components/structure/Navbar";
 
 export default function Home() {
   return (

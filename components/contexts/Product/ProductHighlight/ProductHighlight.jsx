@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Row, Col, Button } from "react-bootstrap";
 import { FaBell, FaQuestionCircle, FaShoppingBasket } from "react-icons/fa";
-import { data } from "../../../data/data";
+import { data } from "../../../../data/data";
 
 export function ProductHighlight() {
   const {
