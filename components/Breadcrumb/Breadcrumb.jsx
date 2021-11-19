@@ -23,7 +23,7 @@ export function HeaderBreadcrumb() {
   return (
     <Card border="primary" style={{ padding: "2rem 1rem" }}>
       <Row>
-        <Col md={8}>
+        <Col>
           <Row className="d-none d-sm-block">
             <Col>
               <Breadcrumb>
