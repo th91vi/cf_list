@@ -1,8 +1,17 @@
 import styled from "styled-components";
 import media from "styled-media-query";
-import { Accordion } from "react-bootstrap";
+import { viagraPackageInsertData } from "../../../../data/viagraPackageInsert";
 
-export const StyledAcordion = styled(Accordion)`
+const Content = ({ className }) => {
+  return (
+    <div
+      className={className}
+      dangerouslySetInnerHTML={{ __html: viagraPackageInsertData }}
+    />
+  );
+};
+
+export const ProductPackageInsertContent = styled(Content)`
   img {
     ${media.lessThan("medium")`
       width: 100%;
