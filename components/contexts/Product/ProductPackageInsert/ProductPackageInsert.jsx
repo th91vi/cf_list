@@ -2,6 +2,8 @@ import { Accordion } from "react-bootstrap";
 import { FaFile } from "react-icons/fa";
 import { viagraPackageInsertData } from "../../../../data/viagraPackageInsert";
 
+import * as S from "./ProductPackageInsert.styles";
+
 export function ProductPackageInsert({
   product: { medicineName, medicineModifier, manufacturer },
 }) {
@@ -13,9 +15,9 @@ export function ProductPackageInsert({
             <FaFile /> {medicineName} {medicineModifier} - {manufacturer}
           </h6>
         </Accordion.Header>
-        <Accordion.Body>
+        <S.StyledAcordion>
           <div dangerouslySetInnerHTML={viagraPackageInsertData} />
-        </Accordion.Body>
+        </S.StyledAcordion>
       </Accordion.Item>
     </Accordion>
   );
