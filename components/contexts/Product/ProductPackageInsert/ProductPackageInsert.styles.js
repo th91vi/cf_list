@@ -13,9 +13,9 @@ const Content = ({ className }) => {
 
 export const ProductPackageInsertContent = styled(Content)`
   img {
+    max-width: 100%;
     ${media.lessThan("medium")`
       width: 100%;
-      max-width: 100%;
       height: auto;
       `}
   }

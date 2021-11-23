@@ -4,6 +4,7 @@ import { HeaderBreadcrumb } from "../components/structure/Breadcrumb/Breadcrumb"
 import { Filter } from "../components/contexts/Product/Filter";
 import { Listing } from "../components/contexts/Product/ProductListing";
 import { HeaderNavbar } from "../components/structure/Navbar";
+import { Footer } from "../components/structure/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </>
   );
 }
