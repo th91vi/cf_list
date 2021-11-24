@@ -52,6 +52,7 @@ export function Footer() {
               <Col xs={12} md={6}>
                 <Stack direction="horizontal" className="mt-2 d-none d-sm-flex">
                   <Form>
+                    <Form.Label className="d-none">Subscrever</Form.Label>
                     <Form.Control></Form.Control>
                   </Form>
                   <Button variant="success" size="ls">
@@ -60,6 +61,7 @@ export function Footer() {
                 </Stack>
                 <div className="d-grid gap-2 d-block d-sm-none">
                   <Form>
+                    <Form.Label className="d-none">Subscrever</Form.Label>
                     <Form.Control></Form.Control>
                   </Form>
                   <Button variant="success" size="ls">
@@ -74,18 +76,30 @@ export function Footer() {
                   <strong>CliqueFarma</strong>
                 </span>
                 <ul style={{ listStyleType: "none", paddingInlineStart: 0 }}>
-                  <a href="#" title="Medicamentos">
-                    <li>Medicamentos</li>
-                  </a>
-                  <a href="#" title="Lista de Medicamentos">
-                    <li>Lista de Medicamentos</li>
-                  </a>
-                  <a href="#" title="Blog">
-                    <li>Blog</li>
-                  </a>
-                  <a href="#" title="Drogarias">
-                    <li>Drogarias</li>
-                  </a>
+                  <li>
+                    {" "}
+                    <a href="#" title="Medicamentos">
+                      Medicamentos{" "}
+                    </a>
+                  </li>
+                  <li>
+                    {" "}
+                    <a href="#" title="Lista de Medicamentos">
+                      Lista de Medicamentos
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="Blog">
+                      Blog
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="Drogarias">
+                      Drogarias
+                    </a>
+                  </li>
                 </ul>
               </Col>
               <Col md={3} className="my-2">
@@ -93,30 +107,53 @@ export function Footer() {
                   <strong>Demais</strong>
                 </span>
                 <ul style={{ listStyleType: "none", paddingInlineStart: 0 }}>
-                  <a href="#" title="Quem somos">
-                    <li>Quem somos</li>
-                  </a>
-                  <a href="#" title="Fale conosco">
-                    <li>Fale conosco</li>
-                  </a>
-                  <a href="#" title="Termos de uso">
-                    <li>Termos de uso</li>
-                  </a>
-                  <a href="#" title="Central de ajuda">
-                    <li>Central de ajuda</li>
-                  </a>
-                  <a href="#" title="Política de privacidade">
-                    <li>Política de privacidade</li>
-                  </a>
-                  <a href="#" title="Proteção de dados">
-                    <li>Proteção de dados</li>
-                  </a>
-                  <a href="#" title="Destaques">
-                    <li>Destaques</li>
-                  </a>
-                  <a href="#" title="Cancelar alertas">
-                    <li>Cancelar alertas</li>
-                  </a>
+                  <li>
+                    <a href="#" title="Quem somos">
+                      Quem somos
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="Fale conosco">
+                      Fale conosco
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="Termos de uso">
+                      Termos de uso
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="Central de ajuda">
+                      Central de ajuda
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="Política de privacidade">
+                      Política de privacidade
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="Proteção de dados">
+                      Proteção de dados
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="Destaques">
+                      Destaques
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" title="Cancelar alertas">
+                      Cancelar alertas
+                    </a>
+                  </li>
                 </ul>
               </Col>
               <Col md={6} className="my-2">

@@ -60,7 +60,7 @@ export function HeaderNavbar() {
                   <Row>
                     <Col md={{ span: 6, offset: 6 }}>
                       <Dropdown drop="start">
-                        <Dropdown.Toggle>
+                        <Dropdown.Toggle aria-label="menu">
                           <FaBars />
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
