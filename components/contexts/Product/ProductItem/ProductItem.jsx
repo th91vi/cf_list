@@ -8,7 +8,7 @@ export function ProductItem({
     dosage,
     manufacturer,
     medicineModifier,
-    pharmacyname,
+    pharmacyName,
     logo,
     callToAction,
     price,
@@ -23,9 +23,9 @@ export function ProductItem({
               src={`/${logo}`}
               width={90}
               height={34}
-              alt={`Logo ${pharmacyname}`}
+              alt={`Logo ${pharmacyName}`}
             />
-            <small>{pharmacyname}</small>
+            <small>{pharmacyName}</small>
           </Card>
         </Col>
         <Col>
@@ -33,7 +33,7 @@ export function ProductItem({
             <Col>
               <h6>
                 {`${medicineName} ${dosage} ${manufacturer} ${medicineModifier}
-                na ${pharmacyname}`}
+                na ${pharmacyName}`}
               </h6>
               <small>{callToAction}</small>
             </Col>

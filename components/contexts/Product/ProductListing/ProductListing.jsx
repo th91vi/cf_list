@@ -5,11 +5,12 @@ import { data } from "../../../../data/data";
 import { ProductItem } from "../ProductItem";
 import { ProductPackageInsert } from "../ProductPackageInsert";
 
-export function Listing() {
+export function Listing({ products }) {
   const {
     product: { medicineName, dosage, medicineModifier, quantity },
     deals,
   } = data;
+
   return (
     <>
       <Accordion defaultActiveKey="0" className="mt-3">
@@ -27,7 +28,7 @@ export function Listing() {
           <Accordion.Body>
             <ProductHighlight />
             <h2 className="text-center my-3">Ofertas encontradas</h2>
-            {deals.map((deal, index) => (
+            {products[0].offers.map((deal, index) => (
               <ProductItem key={index} deal={deal} />
             ))}
           </Accordion.Body>
@@ -76,3 +77,15 @@ export function Listing() {
     </>
   );
 }
+
+// export const getStaticProps = async () => {
+//   const { data } = await axios.get(
+//     "http://localhost:8080/product/ "
+//   );
+
+//   return {
+//     props: {
+//       products: data,
+//     },
+//   };
+// };

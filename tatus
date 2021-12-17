@@ -1,0 +1,143 @@
+[33mcommit 34f22b90ddc90bfd303423633a6b3c92c313a1de[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Wed Nov 24 11:28:19 2021 -0300
+
+    feat: fixed a11y issues
+
+[33mcommit 860cd1617076ea041cab82f05236a89bda0634be[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Wed Nov 24 11:12:35 2021 -0300
+
+    feat: added SideAd component
+
+[33mcommit dcc9bca5a35226752aaef042d26e26f982069a72[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Tue Nov 23 21:11:05 2021 -0300
+
+    refacto0r: downgraded next package version
+
+[33mcommit 16f273e237268edfab286fa40b59356d4318e035[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Tue Nov 23 18:52:49 2021 -0300
+
+    feat: added Footer component
+
+[33mcommit 4dfef5622d2e53a3865594034296aab789bc844b[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Mon Nov 22 19:56:30 2021 -0300
+
+    refactor: yet more refactoring for ProductPackageInsert to provide responsive images
+
+[33mcommit cc47881e4e4e4b8b769fe7586788a12f7dc7c908[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Mon Nov 22 18:38:03 2021 -0300
+
+    refactor: refactored ProductPackageInsert to provide resdponsive images. added styled components and media query packages.
+
+[33mcommit 3c8616356eee2f39839c7b4c11afb7a158a385a5[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Fri Nov 19 18:20:16 2021 -0300
+
+    refactor: moved components to appropriated contexts directories
+
+[33mcommit 636406fed115fa63c106b9bc3d11788a9676b909[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Fri Nov 19 17:59:58 2021 -0300
+
+    refactor: moved Filter component to Product context
+
+[33mcommit a2ec0de8e2f536dc04dfeed29c634df2582b94da[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Fri Nov 19 17:28:27 2021 -0300
+
+    feat: added ProductPackageInsert component
+
+[33mcommit 1b2489006ba0f3ae8adbaf80e31a46236d783445[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Fri Nov 19 17:27:51 2021 -0300
+
+    feat: added medicine package insert data
+
+[33mcommit 030872eb6739a091935eedc5cce1767e8c4ee4ab[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Fri Nov 19 16:40:02 2021 -0300
+
+    feat: added aditional details to ProductListing component
+
+[33mcommit a4cee1977afb53ea0b8ac77c457088d6e52e2d98[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Fri Nov 19 16:24:08 2021 -0300
+
+    feat: added ProductItem component
+
+[33mcommit 5687cb32128e83085e63cccc209d74bae54900b9[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Fri Nov 19 15:03:52 2021 -0300
+
+    feat: added ProductHighlight details
+
+[33mcommit 7f895ee0d204c8c374e076af3152788cd279dc27[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Fri Nov 19 14:24:40 2021 -0300
+
+    feat: added Product context directory. added Product Highlight and ProductListing components
+
+[33mcommit d42f4968125fa0efb5e95dcc5d95af50a907d82c[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Fri Nov 19 11:22:35 2021 -0300
+
+    refactor: layout change for Breadcrumb component
+
+[33mcommit 28e43e795b5b822e912a773b961bf1840517b2cc[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Thu Nov 18 20:12:28 2021 -0300
+
+    feat: added Filter component
+
+[33mcommit c5077c5b8e411b6f9965efaa40a21a2a41142cc4[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Thu Nov 18 18:44:32 2021 -0300
+
+    refactor: added data properties, refactored Breadcrumb component to add medicine and deals info
+
+[33mcommit e1607bfb1781fd303f1367270bd445d057baeda7[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Thu Nov 18 17:30:08 2021 -0300
+
+    refactor: Breadcrumb style refactoring
+
+[33mcommit 92aa8e2a8242dfb4b0f6e3c72701f55fdfa34336[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Thu Nov 18 17:12:32 2021 -0300
+
+    feat: added Breadcrumb component
+
+[33mcommit a9845d65aa36a78ec638338c4c1a2d46239b5d8d[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Thu Nov 18 16:30:24 2021 -0300
+
+    feat: added Navbar component
+
+[33mcommit c5de6a7e2bf63ad3904dbe8508e68ed4391f3dfe[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Thu Nov 18 14:54:58 2021 -0300
+
+    feat: added bootstrap and icons packages to project
+
+[33mcommit 8bd9d3f9db2061196bbd5c6a8322fb511459afb6[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Thu Nov 18 14:52:13 2021 -0300
+
+    feat: added static images
+
+[33mcommit 76ecb93b3b7d052d9e9027c3cd3f4d0457ad5ba1[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Thu Nov 18 14:51:30 2021 -0300
+
+    feat: added deals mocked data
+
+[33mcommit a931c77c641de7d4216dd1b4794be6a4311e4aa7[m
+Author: Thiago Vieira <th91vi@gmail.com>
+Date:   Wed Nov 17 17:06:26 2021 -0300
+
+    Initial commit from Create Next App
