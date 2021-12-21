@@ -1,11 +1,10 @@
 import Head from "next/head";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { HeaderBreadcrumb } from "../components/structure/Breadcrumb/Breadcrumb";
-import { Filter } from "../components/contexts/Product/Filter";
-import { Listing } from "../components/contexts/Product/ProductListing";
 import { SideAd } from "../components/structure/SideAd";
 import { HeaderNavbar } from "../components/structure/Navbar";
 import { Footer } from "../components/structure/Footer";
+import { AutoComplete } from "../components/form/AutoComplete";
 
 const Home = () => {
   return (
@@ -20,7 +19,7 @@ const Home = () => {
         <Row>
           <Col md={8}>
             <HeaderBreadcrumb />
-            <Filter />
+            <AutoComplete />
           </Col>
           <Col md={4} className="d-none d-sm-block">
             <SideAd />

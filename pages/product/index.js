@@ -38,11 +38,11 @@ const ProductPage = ({ products }) => {
 export default ProductPage;
 
 export async function getStaticProps() {
-  const res = await axios.get(`${API_URL}/product`);
+  const { data: products } = await axios.get(`${API_URL}/product`);
 
   return {
     props: {
-      products: res.data,
+      products,
     },
   };
 }

@@ -12,6 +12,7 @@ export function ProductItem({
     pharmacyName,
     logo,
     callToAction,
+    id,
   },
 }) {
   return (
@@ -20,7 +21,7 @@ export function ProductItem({
         <Col xs={3} md={2}>
           <Card>
             <Image
-              src={`/${logo}`}
+              src={"http://localhost:8080/product/image.png"}
               width={90}
               height={34}
               alt={`Logo ${pharmacyName}`}
@@ -36,6 +37,7 @@ export function ProductItem({
                 na ${pharmacyName}`}
               </h6>
               <small>{callToAction}</small>
+              <p>{id}</p>
             </Col>
           </Row>
           <Row>
