@@ -8,10 +8,10 @@ export function ProductItem({
     dosage,
     manufacturer,
     medicineModifier,
+    price,
     pharmacyName,
     logo,
     callToAction,
-    price,
   },
 }) {
   return (

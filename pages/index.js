@@ -7,7 +7,7 @@ import { SideAd } from "../components/structure/SideAd";
 import { HeaderNavbar } from "../components/structure/Navbar";
 import { Footer } from "../components/structure/Footer";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -21,7 +21,6 @@ export default function Home() {
           <Col md={8}>
             <HeaderBreadcrumb />
             <Filter />
-            <Listing />
           </Col>
           <Col md={4} className="d-none d-sm-block">
             <SideAd />
@@ -31,4 +30,6 @@ export default function Home() {
       <Footer />
     </>
   );
-}
+};
+
+export default Home;
