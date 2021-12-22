@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import { debounce } from "lodash";
 import { Form, ListGroup } from "react-bootstrap";
 import * as S from "./AutoCompĺete.styles";
@@ -9,7 +10,9 @@ const AutoCompleteResults = ({ results, active }) => {
   return (
     <S.ResultsList active={active}>
       {results.map((result, index) => (
-        <ListGroup.Item key={index}>{result.name}</ListGroup.Item>
+        <Link key={index} href={`/product/${result.id}`} passHref>
+          <ListGroup.Item>{result.medicineName}</ListGroup.Item>
+        </Link>
       ))}
     </S.ResultsList>
   );
@@ -18,18 +21,18 @@ const AutoCompleteResults = ({ results, active }) => {
 export const AutoComplete = () => {
   const [filteredResults, setFilteredResults] = useState([]);
   const [inputValue, setInputValue] = useState("");
-  const [active, setActive] = useState(false);
 
   const searchMedicineName = debounce(({ target: { value: inputValue } }) => {
     setInputValue(inputValue);
 
     const filteredResults = products.filter(
       (product) =>
-        product.name.toLowerCase().indexOf(inputValue.toLowerCase()) > -1
+        product.medicineName.toLowerCase().indexOf(inputValue.toLowerCase()) >
+        -1
     );
 
     setFilteredResults(filteredResults);
-  }, 1500);
+  }, 1000);
 
   return (
     <S.AutoCompleteCard border="primary">

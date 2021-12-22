@@ -1,9 +1,9 @@
+import axios from "axios";
 import Head from "next/head";
 import { Container, Row, Col } from "react-bootstrap";
-import axios from "axios";
 import { HeaderBreadcrumb } from "../../components/structure/Breadcrumb/Breadcrumb";
 import { Filter } from "../../components/contexts/Product/Filter";
-import { Listing } from "../../components/contexts/Product/ProductListing";
+import { OfferListing } from "../../components/contexts/Product/OfferListing";
 import { SideAd } from "../../components/structure/SideAd";
 import { HeaderNavbar } from "../../components/structure/Navbar";
 import { Footer } from "../../components/structure/Footer";
@@ -14,7 +14,7 @@ const getProductPath = async () => {
   let paths = [];
 
   try {
-    while (paths.length < 10000) {
+    while (paths.length < 15000) {
       const { data: products } = await axios.get(
         `${API_URL}/product?offset=${offset}&limit=${PER_PAGE}`
       );
@@ -41,7 +41,7 @@ export const getStaticProps = async ({ params: { id } }) => {
 
   return {
     props: {
-      products: data,
+      product: data,
     },
   };
 };
@@ -52,7 +52,7 @@ export const getStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-const ProductPage = ({ products }) => {
+const ProductPage = ({ product: { offers } }) => {
   return (
     <>
       <Head>
@@ -66,7 +66,7 @@ const ProductPage = ({ products }) => {
           <Col md={8}>
             <HeaderBreadcrumb />
             <Filter />
-            <Listing products={products} />
+            <OfferListing offers={offers} />
           </Col>
           <Col md={4} className="d-none d-sm-block">
             <SideAd />
